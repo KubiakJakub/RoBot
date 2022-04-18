@@ -1,0 +1,11 @@
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\bin\Debug\RoBot_App.exe.config
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\bin\Debug\RoBot_App.exe
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\bin\Debug\RoBot_App.pdb
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.csproj.AssemblyReference.cache
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.csproj.SuggestedBindingRedirects.cache
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.Form1.resources
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.Properties.Resources.resources
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.csproj.GenerateResource.cache
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.csproj.CoreCompileInputs.cache
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.exe
+C:\Projekty\RoBot_App\RoBot_App\RoBot_App\obj\Debug\RoBot_App.pdb
