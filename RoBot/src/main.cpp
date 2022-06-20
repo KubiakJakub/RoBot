@@ -3,22 +3,21 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WiFiMulti.h>
 
+
+//    >>  WiFi  <<
 #ifndef STASSID
-#define STASSID "TP-Link_5D63"
-#define STAPSK  "52136887"
+#define STASSID "INEA-6A36_2.4G"
+#define STAPSK  "HGEQRU7P"
 #endif
 
 const char* ssid     = STASSID;
 const char* password = STAPSK;
-
-const char* host = "192.168.1.120";
+const char* host = "192.168.1.10";
 const uint16_t port = 8080 ;
-
 ESP8266WiFiMulti WiFiMulti;
-// Configure the motor driver.
-//CytronMD motor1(PWM_PWM, 5, 4);   // PWM 1A = Pin 3, PWM 1B = Pin 9.
-//CytronMD motor2(PWM_PWM, 0, 2); // PWM 2A = Pin 10, PWM 2B = Pin 11.
 
+void dataReciver ();
+//    >>  WiFi  <<
 
 /*
     This sketch sends a string to a TCP server, and prints a one-line response.
@@ -26,6 +25,13 @@ ESP8266WiFiMulti WiFiMulti;
     For example, on Linux you can use this command: nc -v -l 3000
 */
 
+//    >> MOTOR  <<
+int left_motor[] = {3, 9};
+int right_motor[] = {10, 11};
+//CytronMD motor1(PWM_PWM, 3, 9);
+//CytronMD motor2(PWM_PWM, 10,11);
+void setSpeed(int speed, int motor[]);
+//    >> MOTOR  <<
 
 
 void setup() {
@@ -54,6 +60,14 @@ void setup() {
 
 
 void loop() {
+
+
+
+ /*
+  >>  WiFi connection <<
+  >>  WiFi connection <<
+  >>  WiFi connection <<
+*/
   Serial.print("connecting to ");
   Serial.print(host);
   Serial.print(':');
@@ -83,3 +97,39 @@ void loop() {
   Serial.println("wait 5 sec...");
   delay(5000);
 }
+
+
+
+
+ /*
+    >> CUSTOM FUNCTIONS
+*/
+
+void dataReciver(){
+  
+}
+
+
+// PWM control
+void setSpeed(int speed, int motor[]){
+  // Limit speed
+  if (speed > 255) {
+      speed = 255;
+    } else if (speed < -255) {
+      speed = -255;
+    }
+
+  // Set speed an dircetion
+  if (speed >= 0) {
+        analogWrite(motor[0], speed);
+        analogWrite(motor[1], 0);
+      } else {
+        analogWrite(motor[0], 0);
+        analogWrite(motor[1], -speed);
+      }
+}
+
+
+
+
+
