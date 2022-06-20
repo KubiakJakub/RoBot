@@ -76,5 +76,25 @@ namespace RoBot_App
         {
             Server.IsLisening = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_left_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_right_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

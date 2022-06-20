@@ -16,7 +16,7 @@ namespace RoBot_App
         public delegate void MessageEventHandler(RoBotServer sender, string Data);
 
         //Servel Control
-        public IPAddress ServerIP = IPAddress.Parse("192.168.1.120"); // computer internal ip adress
+        public IPAddress ServerIP = IPAddress.Parse("192.168.1.10"); // computer internal ip adress
         public int ServerPort = 8080;
         public TcpListener myserver;
 
