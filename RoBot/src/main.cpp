@@ -24,10 +24,10 @@ void dataReciver ();
     You must run a TCP server in your local network.
     For example, on Linux you can use this command: nc -v -l 3000
 */
-
+  int btn_state = 0;
 //    >> MOTOR  <<
-int left_motor[] = {3, 9};
-int right_motor[] = {10, 11};
+int left_motor[] = {14, 12};
+int right_motor[] = {13, 15};
 //CytronMD motor1(PWM_PWM, 3, 9);
 //CytronMD motor2(PWM_PWM, 10,11);
 void setSpeed(int speed, int motor[]);
@@ -36,8 +36,12 @@ void setSpeed(int speed, int motor[]);
 
 void setup() {
   Serial.begin(115200);
+  pinMode(0, INPUT_PULLUP);
+  pinMode(2, OUTPUT);
+
 
   // We start by connecting to a WiFi network
+  /*
   WiFi.mode(WIFI_STA);
   WiFiMulti.addAP(ssid, password);
 
@@ -56,18 +60,28 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   delay(500);
+  */
 }
 
 
 void loop() {
 
-
-
+  btn_state = digitalRead(0);
+  if (btn_state == LOW){
+    setSpeed(128, left_motor);
+    Serial.println(btn_state);
+    digitalWrite(2, LOW);
+  }else{
+    digitalWrite(2, HIGH);
+    Serial.println(btn_state);
+    setSpeed(-128, left_motor);
+  }
+delay(1000);
  /*
   >>  WiFi connection <<
   >>  WiFi connection <<
   >>  WiFi connection <<
-*/
+
   Serial.print("connecting to ");
   Serial.print(host);
   Serial.print(':');
@@ -96,6 +110,7 @@ void loop() {
 
   Serial.println("wait 5 sec...");
   delay(5000);
+  */
 }
 
 
