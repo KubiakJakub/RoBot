@@ -1,0 +1,128 @@
+<Meta name="lab01">
+  <messagelist>
+    <message status="normal" label="build" groupid="400002" scope="lab01" id="1061485930" classid="MessageObj"><![CDATA[Begin compiling with PSCAD Version Free]]></message>
+    <message status="warning" label="build" groupid="204503" scope="lab01" id="1855282364" classid="MessageObj"><![CDATA[One or more Fortran compiler checks and/or warning options are enabled in the project settings. It is recommended that these options be used during debugging only, as their use can result in a reduction of compile and/or simulation speed.]]></message>
+    <message status="normal" label="build" groupid="100006" link="437719352" id="437719352" classid="FileNavigator"><![CDATA[Generating 'C:\Projekty\JK\lab01.gf46\lab01.map'.]]><file scope="lab01">C:\Projekty\JK\lab01.gf46\lab01.map</file></message>
+    <message status="normal" label="build" groupid="100015" scope="lab01" id="1174838295" classid="MessageObj"><![CDATA[The total number of live nodes: 0]]></message>
+    <message status="normal" label="build" groupid="0" link="1999261609" id="1999261609" classid="FileNavigator"><![CDATA[Coding .mak file: 'C:\Projekty\JK\lab01.gf46\\lab01.mak']]><file scope="lab01">C:\Projekty\JK\lab01.gf46\\lab01.mak</file></message>
+    <message status="normal" label="build" groupid="400000" scope="lab01" id="322583967" classid="MessageObj"><![CDATA[Time for Compile: 531ms  Make: 0ms]]></message>
+    <message status="normal" label="build" groupid="400000" scope="lab01" id="1012521066" classid="MessageObj"><![CDATA[Solve Time = 0ms]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="1424674607" classid="MessageObj"><![CDATA[Will execute (1): call C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="377128798" classid="MessageObj"><![CDATA[Will execute (1): call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat"]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="455054626" classid="MessageObj"><![CDATA[Will execute (2): make -j -f lab01.mak]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="1497769187" classid="MessageObj"><![CDATA[Will execute (2): "C:\Projekty\JK\lab01.gf46\lab01_mak.bat"]]></message>
+    <message status="normal" label="build" groupid="100005" scope="lab01" id="1045522831" classid="MessageObj"><![CDATA[Creating EMTDC executable...]]></message>
+    <message status="normal" label="build" groupid="0" scope="lab01" id="794763083" classid="MessageObj"><![CDATA[C:\Projekty\JK\lab01.gf46>call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat" ]]></message>
+    <message status="normal" label="build" groupid="100004" scope="lab01" id="425543540" classid="MessageObj"><![CDATA[Compiling 'Main.f' into object code.]]></message>
+    <message status="normal" label="build" groupid="100013" scope="lab01" id="914719791" classid="MessageObj"><![CDATA[Linking objects and libraries into binary 'lab01.exe']]></message>
+    <message status="normal" label="build" groupid="400003" scope="lab01" id="124535206" classid="MessageObj"><![CDATA[Finished compiling with PSCAD Version Free]]></message>
+  </messagelist>
+  <ViewContext>
+    <Window defn="lab01:Main" call="0" />
+  </ViewContext>
+  <List classid="View">
+    <View name="Main" zoomscale="1.2" scrollx="2798" scrolly="0" />
+  </List>
+  <Output device="EMTDC" version="2010" date="2022/12/12" time="12:01:26.000000">
+    <Domain name="Time" unit="s" mult="0.0" skew="0.0">
+      <Sample rate="1000.0" end="30000" />
+    </Domain>
+    <List classid="Analog">
+      <Analog name="Main(0):Odp.skok.prop" index="1" gindex="100663297" id="93946152:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_27" index="2" gindex="100663298" id="93960840:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):Odp.imp.prop" index="3" gindex="100663299" id="93937176:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_31" index="4" gindex="100663300" id="93960432:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_35" index="5" gindex="100663301" id="93907392:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_156" index="6" gindex="100663302" id="584305230:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_159" index="7" gindex="100663303" id="1846283940:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_38" index="8" gindex="100663304" id="93908208:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.calk.ideal" index="9" gindex="100663305" id="93937992:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_41" index="10" gindex="100663306" id="93900456:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_161" index="11" gindex="100663307" id="1226714976:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_44" index="12" gindex="100663308" id="93901680:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.calk.rzecz" index="13" gindex="100663309" id="93947784:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_163" index="14" gindex="100663310" id="17661256:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_165" index="15" gindex="100663311" id="482538894:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.imp.calk.ideal" index="16" gindex="100663312" id="93944112:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):RT_167" index="17" gindex="100663313" id="571829629:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="18" gindex="100663314" id="1868404391:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.imp.calk.rzecz" index="19" gindex="100663315" id="93943704:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="20" gindex="100663316" id="2095838579:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="21" gindex="100663317" id="1107534465:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.roz.ideal" index="22" gindex="100663318" id="93957576:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="23" gindex="100663319" id="2132833151:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.roz.ideal" index="24" gindex="100663320" id="93951048:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="25" gindex="100663321" id="1988893418:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="26" gindex="100663322" id="1409514594:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="27" gindex="100663323" id="241607927:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="28" gindex="100663324" id="684817685:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="29" gindex="100663325" id="978645200:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.imp.roz.ideal" index="30" gindex="100663326" id="374001983:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="31" gindex="100663327" id="40041242:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.imp.roz.ideal" index="32" gindex="100663328" id="2070099303:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="33" gindex="100663329" id="1621833339:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="34" gindex="100663330" id="1891919632:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="35" gindex="100663331" id="783561730:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="36" gindex="100663332" id="1462874730:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="37" gindex="100663333" id="1089683547:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.inercyjnego I rzedu" index="38" gindex="100663334" id="93951456:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="39" gindex="100663335" id="2095579812:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="40" gindex="100663336" id="1661889703:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="41" gindex="100663337" id="830493894:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.inercyjnego I rzedu" index="42" gindex="100663338" id="2016150148:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="43" gindex="100663339" id="549239538:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="44" gindex="100663340" id="60387930:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="45" gindex="100663341" id="925144994:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.inercyjnego II rzedu" index="46" gindex="100663342" id="93956760:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="47" gindex="100663343" id="312609601:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="48" gindex="100663344" id="828956420:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.imp.inercyjnego II rzedu" index="49" gindex="100663345" id="1168536342:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="50" gindex="100663346" id="708699251:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="51" gindex="100663347" id="1676362166:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="52" gindex="100663348" id="354513492:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="53" gindex="100663349" id="2099448250:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="54" gindex="100663350" id="242556094:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.opoz" index="55" gindex="100663351" id="93953904:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="56" gindex="100663352" id="712654304:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="57" gindex="100663353" id="1487543856:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="58" gindex="100663354" id="2140492303:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="59" gindex="100663355" id="378947939:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):odp.skok.opoz" index="60" gindex="100663356" id="621166719:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="61" gindex="100663357" id="224446826:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="62" gindex="100663358" id="349030857:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="63" gindex="100663359" id="804411651:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="64" gindex="100663360" id="796154701:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="65" gindex="100663361" id="1820877804:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="66" gindex="100663362" id="1716939914:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="67" gindex="100663363" id="171024568:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="68" gindex="100663364" id="329599594:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="69" gindex="100663365" id="678619367:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="70" gindex="100663366" id="299428831:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="71" gindex="100663367" id="663116255:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="72" gindex="100663368" id="1394308851:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="73" gindex="100663369" id="404520804:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="74" gindex="100663370" id="1425674880:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="75" gindex="100663371" id="571914256:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="76" gindex="100663372" id="1425230009:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="77" gindex="100663373" id="1970239672:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="78" gindex="100663374" id="2048630253:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="79" gindex="100663375" id="1034921248:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="80" gindex="100663376" id="255488750:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="81" gindex="100663377" id="1685071992:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="82" gindex="100663378" id="1916598690:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="83" gindex="100663379" id="620772496:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="84" gindex="100663380" id="980833241:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="85" gindex="100663381" id="325093330:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="86" gindex="100663382" id="1411342509:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=3" index="87" gindex="100663383" id="1476132817:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="88" gindex="100663384" id="1831622154:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=6" index="89" gindex="100663385" id="2124700012:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="90" gindex="100663386" id="1406475513:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):k=9" index="91" gindex="100663387" id="1873503981:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=3" index="92" gindex="100663388" id="1292580778:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=6" index="93" gindex="100663389" id="568693851:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+      <Analog name="Main(0):T=9" index="94" gindex="100663390" id="307058301:0" label="" dim="1" unit="" min="-2.0" max="2.0" />
+    </List>
+    <List classid="Digital" />
+  </Output>
+</Meta>

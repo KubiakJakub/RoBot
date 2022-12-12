@@ -1,0 +1,14 @@
+<workspace name="lab1" version="5.0.1" crc="70767098">
+  <projects>
+    <project type="project" name="lab01" filepath=".\lab01.pscx" />
+  </projects>
+  <simulations />
+  <pmr />
+  <messagegrid expanded="">
+    <column name="Icon" />
+    <column name="Id" />
+    <column name="Component" />
+    <column name="Namespace" />
+    <column name="Description" />
+  </messagegrid>
+</workspace>

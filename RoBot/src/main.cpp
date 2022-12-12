@@ -1,150 +1,170 @@
 #include <Arduino.h>
-//#include "CytronMotorDriver.h"
-#include <ESP8266WiFi.h>
-#include <ESP8266WiFiMulti.h>
-
+#include "CytronMotorDriver.h"
 
 //    >>  WiFi  <<
-#ifndef STASSID
-#define STASSID "INEA-6A36_2.4G"
-#define STAPSK  "HGEQRU7P"
-#endif
+// #ifndef STASSID
+// #define STASSID "INEA-6A36_2.4G"
+// #define STAPSK "HGEQRU7P"
+// #endif
 
-const char* ssid     = STASSID;
-const char* password = STAPSK;
-const char* host = "192.168.1.10";
-const uint16_t port = 8080 ;
-ESP8266WiFiMulti WiFiMulti;
+// const char *ssid = STASSID;
+// const char *password = STAPSK;
+// const char *host = "192.168.1.10";
+// const uint16_t port = 8080;
 
-void dataReciver ();
-//    >>  WiFi  <<
-
-/*
-    This sketch sends a string to a TCP server, and prints a one-line response.
-    You must run a TCP server in your local network.
-    For example, on Linux you can use this command: nc -v -l 3000
-*/
-  int btn_state = 0;
+int btn_state = 0;
 //    >> MOTOR  <<
-int left_motor[] = {14, 12};
-int right_motor[] = {13, 15};
-//CytronMD motor1(PWM_PWM, 3, 9);
-//CytronMD motor2(PWM_PWM, 10,11);
-void setSpeed(int speed, int motor[]);
+int left_motor[] = {2, 3};
+int right_motor[] = {6, 7};
+int buttons[] = {18, 19, 20, 22, 21}; // l_up; l_down; speed; r_up; l_down;
+bool l_up;
+bool l_down;
+bool speed_btn;
+bool r_up;
+bool r_down;
+int currentSpeed = 128;
+bool speedState = false;
+CytronMD motor1(PWM_PWM, left_motor[0], left_motor[1]);
+CytronMD motor2(PWM_PWM, right_motor[0], right_motor[1]);
 //    >> MOTOR  <<
 
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(0, INPUT_PULLUP);
-  pinMode(2, OUTPUT);
-
-
-  // We start by connecting to a WiFi network
-  /*
-  WiFi.mode(WIFI_STA);
-  WiFiMulti.addAP(ssid, password);
-
-  Serial.println();
-  Serial.println();
-  Serial.print("Wait for WiFi... ");
-
-  while (WiFiMulti.run() != WL_CONNECTED) {
-    Serial.print(".");
-    delay(500);
-  }
-
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
-
-  delay(500);
-  */
-}
-
-
-void loop() {
-
-  btn_state = digitalRead(0);
-  if (btn_state == LOW){
-    setSpeed(128, left_motor);
-    Serial.println(btn_state);
-    digitalWrite(2, LOW);
-  }else{
-    digitalWrite(2, HIGH);
-    Serial.println(btn_state);
-    setSpeed(-128, left_motor);
-  }
-delay(1000);
- /*
-  >>  WiFi connection <<
-  >>  WiFi connection <<
-  >>  WiFi connection <<
-
-  Serial.print("connecting to ");
-  Serial.print(host);
-  Serial.print(':');
-  Serial.println(port);
-
-  // Use WiFiClient class to create TCP connections
-  WiFiClient client;
-
-  if (!client.connect(host, port)) {
-    Serial.println("connection failed");
-    Serial.println("wait 5 sec...");
-    delay(5000);
-    return;
-  }
-
-  // This will send the request to the server
-  client.println("hello from ESP8266");
-
-  //read back one line from server
-  Serial.println("receiving from remote server");
-  String line = client.readStringUntil('\r');
-  Serial.println(line);
-
-  Serial.println("closing connection");
-  client.stop();
-
-  Serial.println("wait 5 sec...");
+void setup()
+{
   delay(5000);
-  */
+  Serial.begin(115200);
+  Serial.println("Setup is running.");
+  for (int i = 0; i < 5; i++)
+  {
+    pinMode(buttons[i], INPUT_PULLDOWN);
+  }
+
+  Serial.println("RoBot is Online");
 }
 
+void loop()
+{
 
+  // if (digitalRead(buttons[0]))
+  // {
+  //   digitalWrite(left_motor[0], HIGH);
+  //   digitalWrite(left_motor[1], LOW);
+  // }
+  // else
+  // {
+  //   digitalWrite(left_motor[0], LOW);
+  //   digitalWrite(left_motor[1], LOW);
+  // }
+  // if (digitalRead(buttons[1]))
+  // {
+  //   digitalWrite(left_motor[0], LOW);
+  //   digitalWrite(left_motor[1], HIGH);
+  // }
+  // else
+  // {
+  //   digitalWrite(left_motor[0], LOW);
+  //   digitalWrite(left_motor[1], LOW);
+  // }
 
+  // if (digitalRead(buttons[3]))
+  // {
+  //   digitalWrite(right_motor[0], HIGH);
+  //   digitalWrite(right_motor[1], LOW);
+  // }
+  // else
+  // {
+  //   digitalWrite(right_motor[0], LOW);
+  //   digitalWrite(right_motor[1], LOW);
+  // }
 
- /*
-    >> CUSTOM FUNCTIONS
-*/
+  // if (digitalRead(buttons[4]))
+  // {
+  //   digitalWrite(right_motor[0], LOW);
+  //   digitalWrite(right_motor[1], HIGH);
+  // }
+  // else
+  // {
+  //   digitalWrite(right_motor[0], LOW);
+  //   digitalWrite(right_motor[1], LOW);
+  //}
 
-void dataReciver(){
-  
+  switch (direction())
+  {
+  case /* constant-expression */:
+    /* code */
+    break;
+
+  default:
+    break;
+  }
+
+  // Forweoard
+  (digitalRead(buttons[0])) ? motor1.setSpeed(currentSpeed) : motor1.setSpeed(0); // V
+  (digitalRead(buttons[3])) ? motor2.setSpeed(currentSpeed) : motor2.setSpeed(0); // V
+
+  // Backwoard
+  (digitalRead(buttons[1])) ? motor1.setSpeed(-currentSpeed) : motor1.setSpeed(0);
+  (digitalRead(buttons[4])) ? motor2.setSpeed(-currentSpeed) : motor2.setSpeed(0);
+
+  // left
+  (digitalRead(buttons[0])) ? motor1.setSpeed(currentSpeed) : motor1.setSpeed(0); // V
+  (digitalRead(buttons[4])) ? motor2.setSpeed(-currentSpeed) : motor2.setSpeed(0);
+
+  // Right
+
+  // (digitalRead(buttons[2]) != speedState) ? speedState = !speedState : speedState;
+  // (speedState) ? currentSpeed = 256 : currentSpeed = 128;
+
+  // if (digitalRead(buttons[0]))
+  // {
+  //   Serial.print("l_up: ");
+  //   Serial.println(digitalRead(buttons[0]));
+  // }
+
+  // if (digitalRead(buttons[1]))
+  // {
+  //   Serial.print("l_down: ");
+  //   Serial.println(digitalRead(buttons[1]));
+  // }
+
+  // if (digitalRead(buttons[2]))
+  // {
+  //   Serial.print("Speed: ");
+  //   Serial.println(digitalRead(buttons[2]));
+  // }
+
+  // if (digitalRead(buttons[3]))
+  // {
+  //   Serial.print("r_up: ");
+  //   Serial.println(digitalRead(buttons[3]));
+  // }
+
+  // if (digitalRead(buttons[4]))
+  // {
+  //   Serial.print("r_down: ");
+  //   Serial.println(digitalRead(buttons[4]));
+  // }
+  // delay(100);
+  //  motor1.setSpeed(128);   // Motor 1 runs forward at 50% speed.
+  // motor2.setSpeed(-128);  // Motor 2 runs backward at 50% speed.
+  // delay(1000);
+
+  // motor1.setSpeed(255);   // Motor 1 runs forward at full speed.
+  // motor2.setSpeed(-255);  // Motor 2 runs backward at full speed.
+  // delay(1000);
+
+  // motor1.setSpeed(0);     // Motor 1 stops.
+  // motor2.setSpeed(0);     // Motor 2 stops.
+  // delay(1000);
+
+  // motor1.setSpeed(-128);  // Motor 1 runs backward at 50% speed.
+  // motor2.setSpeed(128);   // Motor 2 runs forward at 50% speed.
+  // delay(1000);
+
+  // motor1.setSpeed(-255);  // Motor 1 runs backward at full speed.
+  // motor2.setSpeed(255);   // Motor 2 runs forward at full speed.
+  // delay(1000);
+
+  // motor1.setSpeed(0);     // Motor 1 stops.
+  // motor2.setSpeed(0);     // Motor 2 stops.
+  // delay(1000);
 }
-
-
-// PWM control
-void setSpeed(int speed, int motor[]){
-  // Limit speed
-  if (speed > 255) {
-      speed = 255;
-    } else if (speed < -255) {
-      speed = -255;
-    }
-
-  // Set speed an dircetion
-  if (speed >= 0) {
-        analogWrite(motor[0], speed);
-        analogWrite(motor[1], 0);
-      } else {
-        analogWrite(motor[0], 0);
-        analogWrite(motor[1], -speed);
-      }
-}
-
-
-
-
-
