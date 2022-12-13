@@ -1,32 +1,22 @@
 #include <Arduino.h>
 #include "CytronMotorDriver.h"
 
-//    >>  WiFi  <<
-// #ifndef STASSID
-// #define STASSID "INEA-6A36_2.4G"
-// #define STAPSK "HGEQRU7P"
-// #endif
-
-// const char *ssid = STASSID;
-// const char *password = STAPSK;
-// const char *host = "192.168.1.10";
-// const uint16_t port = 8080;
-
-int btn_state = 0;
 //    >> MOTOR  <<
 int left_motor[] = {2, 3};
 int right_motor[] = {6, 7};
 int buttons[] = {18, 19, 20, 22, 21}; // l_up; l_down; speed; r_up; l_down;
-bool l_up;
-bool l_down;
-bool speed_btn;
-bool r_up;
-bool r_down;
+int direction = 0;
 int currentSpeed = 128;
+bool lastSpeedState = true;
 bool speedState = false;
 CytronMD motor1(PWM_PWM, left_motor[0], left_motor[1]);
 CytronMD motor2(PWM_PWM, right_motor[0], right_motor[1]);
 //    >> MOTOR  <<
+
+// >> Control functions <<
+int getDirection(int upBtn, int downBtn, int leftBtn, int rightBtn);
+void moveTo(int direction, int speed);
+int setSpeed(int speedBtn);
 
 void setup()
 {
@@ -44,127 +34,64 @@ void setup()
 void loop()
 {
 
-  // if (digitalRead(buttons[0]))
-  // {
-  //   digitalWrite(left_motor[0], HIGH);
-  //   digitalWrite(left_motor[1], LOW);
-  // }
-  // else
-  // {
-  //   digitalWrite(left_motor[0], LOW);
-  //   digitalWrite(left_motor[1], LOW);
-  // }
-  // if (digitalRead(buttons[1]))
-  // {
-  //   digitalWrite(left_motor[0], LOW);
-  //   digitalWrite(left_motor[1], HIGH);
-  // }
-  // else
-  // {
-  //   digitalWrite(left_motor[0], LOW);
-  //   digitalWrite(left_motor[1], LOW);
-  // }
+  direction = getDirection(buttons[0], buttons[1], buttons[3], buttons[4]);
+  moveTo(direction, setSpeed(buttons[2]));
+}
 
-  // if (digitalRead(buttons[3]))
-  // {
-  //   digitalWrite(right_motor[0], HIGH);
-  //   digitalWrite(right_motor[1], LOW);
-  // }
-  // else
-  // {
-  //   digitalWrite(right_motor[0], LOW);
-  //   digitalWrite(right_motor[1], LOW);
-  // }
+// Custom
 
-  // if (digitalRead(buttons[4]))
-  // {
-  //   digitalWrite(right_motor[0], LOW);
-  //   digitalWrite(right_motor[1], HIGH);
-  // }
-  // else
-  // {
-  //   digitalWrite(right_motor[0], LOW);
-  //   digitalWrite(right_motor[1], LOW);
-  //}
+int getDirection(int upBtn, int downBtn, int leftBtn, int rightBtn)
+{
+  int currentDirection = 0;
+  digitalRead(upBtn) ? currentDirection = 1 : 0;
+  digitalRead(downBtn) ? currentDirection = 2 : 0;
+  digitalRead(leftBtn) ? currentDirection = 3 : 0;
+  digitalRead(rightBtn) ? currentDirection = 4 : 0;
+  return currentDirection;
+}
 
-  switch (direction())
+int setSpeed(int speedBtn)
+{
+  speedState = digitalRead(speedBtn);
+  if (!lastSpeedState && speedState)
   {
-  case /* constant-expression */:
-    /* code */
-    break;
-
-  default:
-    break;
+    currentSpeed == 128 ? currentSpeed = 64 : currentSpeed = 128;
   }
+  lastSpeedState = speedState;
 
-  // Forweoard
-  (digitalRead(buttons[0])) ? motor1.setSpeed(currentSpeed) : motor1.setSpeed(0); // V
-  (digitalRead(buttons[3])) ? motor2.setSpeed(currentSpeed) : motor2.setSpeed(0); // V
+  return currentSpeed;
+}
 
-  // Backwoard
-  (digitalRead(buttons[1])) ? motor1.setSpeed(-currentSpeed) : motor1.setSpeed(0);
-  (digitalRead(buttons[4])) ? motor2.setSpeed(-currentSpeed) : motor2.setSpeed(0);
-
-  // left
-  (digitalRead(buttons[0])) ? motor1.setSpeed(currentSpeed) : motor1.setSpeed(0); // V
-  (digitalRead(buttons[4])) ? motor2.setSpeed(-currentSpeed) : motor2.setSpeed(0);
-
-  // Right
-
-  // (digitalRead(buttons[2]) != speedState) ? speedState = !speedState : speedState;
-  // (speedState) ? currentSpeed = 256 : currentSpeed = 128;
-
-  // if (digitalRead(buttons[0]))
-  // {
-  //   Serial.print("l_up: ");
-  //   Serial.println(digitalRead(buttons[0]));
-  // }
-
-  // if (digitalRead(buttons[1]))
-  // {
-  //   Serial.print("l_down: ");
-  //   Serial.println(digitalRead(buttons[1]));
-  // }
-
-  // if (digitalRead(buttons[2]))
-  // {
-  //   Serial.print("Speed: ");
-  //   Serial.println(digitalRead(buttons[2]));
-  // }
-
-  // if (digitalRead(buttons[3]))
-  // {
-  //   Serial.print("r_up: ");
-  //   Serial.println(digitalRead(buttons[3]));
-  // }
-
-  // if (digitalRead(buttons[4]))
-  // {
-  //   Serial.print("r_down: ");
-  //   Serial.println(digitalRead(buttons[4]));
-  // }
-  // delay(100);
-  //  motor1.setSpeed(128);   // Motor 1 runs forward at 50% speed.
-  // motor2.setSpeed(-128);  // Motor 2 runs backward at 50% speed.
-  // delay(1000);
-
-  // motor1.setSpeed(255);   // Motor 1 runs forward at full speed.
-  // motor2.setSpeed(-255);  // Motor 2 runs backward at full speed.
-  // delay(1000);
-
-  // motor1.setSpeed(0);     // Motor 1 stops.
-  // motor2.setSpeed(0);     // Motor 2 stops.
-  // delay(1000);
-
-  // motor1.setSpeed(-128);  // Motor 1 runs backward at 50% speed.
-  // motor2.setSpeed(128);   // Motor 2 runs forward at 50% speed.
-  // delay(1000);
-
-  // motor1.setSpeed(-255);  // Motor 1 runs backward at full speed.
-  // motor2.setSpeed(255);   // Motor 2 runs forward at full speed.
-  // delay(1000);
-
-  // motor1.setSpeed(0);     // Motor 1 stops.
-  // motor2.setSpeed(0);     // Motor 2 stops.
-  // delay(1000);
+void moveTo(int direction, int speed)
+{
+  switch (direction)
+  {
+  case 0:
+    // Serial.println("Notging");
+    motor1.setSpeed(0);
+    motor2.setSpeed(0);
+    break;
+  case 1:
+    Serial.println("Up");
+    motor1.setSpeed(speed);
+    motor2.setSpeed(speed);
+    break;
+  case 2:
+    Serial.println("Down");
+    motor1.setSpeed(-speed);
+    motor2.setSpeed(-speed);
+    break;
+  case 3:
+    Serial.println("Left");
+    motor1.setSpeed(speed);
+    motor2.setSpeed(-speed);
+    break;
+  case 4:
+    Serial.println("right");
+    motor1.setSpeed(-speed);
+    motor2.setSpeed(speed);
+    break;
+  default:
+    Serial.println("Something goes wrong, check your controler conections.");
+  }
 }
