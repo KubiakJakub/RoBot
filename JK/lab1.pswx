@@ -1,6 +1,7 @@
-<workspace name="lab1" version="5.0.1" crc="70767098">
+<workspace name="lab1" version="5.0.1" crc="90681192">
   <projects>
-    <project type="project" name="lab01" filepath=".\lab01.pscx" />
+    <project type="project" name="L4_RAC505" filepath="..\..\Users\jakub\Downloads\L4-RAC505.pscx" />
+    <project type="project" name="L5_KUB828" filepath="..\..\Users\jakub\OneDrive\Pulpit\Nowy folder (2)\L5-KUB828.pscx" />
   </projects>
   <simulations />
   <pmr />

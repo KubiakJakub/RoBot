@@ -23,7 +23,7 @@
     <param name="Warn" value="1" />
     <param name="Check" value="15" />
     <param name="description" value="" />
-    <param name="revisor" value="jakub, 1670843009" />
+    <param name="revisor" value="jakub, 1671229031" />
     <param name="architecture" value="windows" />
     <param name="Source" value="" />
     <param name="latency_count" value="100" />
@@ -269,6 +269,11 @@
       </path>
       <paramlist>
         <param name="active_1" value="true" />
+        <param name="visible_1" value="true" />
+        <param name="bold_1" value="false" />
+        <param name="style_1" value="false" />
+        <param name="count" value="1" />
+        <param name="name" value="odp.skok.calk.rzecz" />
       </paramlist>
     </Settings>
     <Settings classid="TraceSettings" id="822930132" link="662859458">
@@ -1175,6 +1180,318 @@
         <param name="ymax" value="1.2" />
       </paramlist>
     </Settings>
+    <Settings classid="TraceSettings" id="336434560" link="739833055">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="427216826" link="1109206047">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="904999569" link="296914460">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="863553675" link="1776681959">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1655714600" link="524093421">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1089464410" link="1586246638">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1463431927" link="1129819346">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="7743624" link="103055160">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="270832692" link="1467265625">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="703991389" link="806098202">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1825157473" link="1517496067">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1516183421" link="1022428141">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1287210023" link="458475083">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="475550810" link="1683760486">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="804576141" link="367910905">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="321267138" link="1639161145">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="803405801" link="1838487255">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="695542541" link="1345948706">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="190586479" link="145807288">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="2114978557" link="1634685743">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="270582418" link="1665244859">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="626993503" link="1426066579">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1166308757" link="1175833487">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="142342063" link="1507455538">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="725616888" link="2074345216">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1228022882" link="1674857591">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1431441810" link="74150441">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="611184888" link="1312144602">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1018050627" link="14678344">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1663697033" link="203504927">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1021096150" link="380658114">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1406897134" link="398167518">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1964728870" link="1118289345">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1933329413" link="1851666289">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1585729895" link="1612384654">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="731398521" link="1396088582">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1260326343" link="1588290788">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="1110579170" link="2121527344">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
+    <Settings classid="TraceSettings" id="939995799" link="346395486">
+      <path>
+        <ref link="1557967151" />
+      </path>
+      <paramlist>
+        <param name="active_1" value="true" />
+      </paramlist>
+    </Settings>
   </List>
   <bookmarks />
   <definitions>
@@ -1209,7 +1526,7 @@
         <grouping />
       </schematic>
     </Definition>
-    <Definition classid="UserCmpDefn" name="Main" group="" url="" version="" build="" crc="55441636" view="false" date="1670842884" id="1274562280">
+    <Definition classid="UserCmpDefn" name="Main" group="" url="" version="" build="" crc="63108344" view="false" date="1670842884" id="1274562280">
       <paramlist>
         <param name="Description" value="" />
       </paramlist>
@@ -5900,9 +6217,9 @@
             <param name="weight" value="2" />
           </paramlist>
         </Line>
-        <User classid="UserCmp" id="592153255" name="master:annotation" x="4302" y="126" w="36" h="20" z="1" orient="0" defn="master:annotation" link="-1" q="4" disable="false">
+        <User classid="UserCmp" id="592153255" name="master:annotation" x="4302" y="126" w="54" h="20" z="1" orient="0" defn="master:annotation" link="-1" q="4" disable="false">
           <paramlist name="" link="-1" crc="5338603">
-            <param name="AL1" value="Zad 3" />
+            <param name="AL1" value="Zad 3 i 4" />
             <param name="AL2" value="" />
           </paramlist>
         </User>
@@ -8566,7 +8883,7 @@
     </paramlist>
   </GlobalSubstitutions>
   <hierarchy>
-    <call link="1507099221" name="lab01:DS" z="-1" view="false" instance="0">
+    <call link="1695014990" name="lab01:DS" z="-1" view="false" instance="0">
       <call link="1557967151" name="lab01:Main" z="-1" view="true" instance="0" />
     </call>
   </hierarchy>

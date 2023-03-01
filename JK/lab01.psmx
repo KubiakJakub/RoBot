@@ -1,29 +1,28 @@
 <Meta name="lab01">
   <messagelist>
-    <message status="normal" label="build" groupid="400002" scope="lab01" id="1061485930" classid="MessageObj"><![CDATA[Begin compiling with PSCAD Version Free]]></message>
-    <message status="warning" label="build" groupid="204503" scope="lab01" id="1855282364" classid="MessageObj"><![CDATA[One or more Fortran compiler checks and/or warning options are enabled in the project settings. It is recommended that these options be used during debugging only, as their use can result in a reduction of compile and/or simulation speed.]]></message>
-    <message status="normal" label="build" groupid="100006" link="437719352" id="437719352" classid="FileNavigator"><![CDATA[Generating 'C:\Projekty\JK\lab01.gf46\lab01.map'.]]><file scope="lab01">C:\Projekty\JK\lab01.gf46\lab01.map</file></message>
-    <message status="normal" label="build" groupid="100015" scope="lab01" id="1174838295" classid="MessageObj"><![CDATA[The total number of live nodes: 0]]></message>
-    <message status="normal" label="build" groupid="0" link="1999261609" id="1999261609" classid="FileNavigator"><![CDATA[Coding .mak file: 'C:\Projekty\JK\lab01.gf46\\lab01.mak']]><file scope="lab01">C:\Projekty\JK\lab01.gf46\\lab01.mak</file></message>
-    <message status="normal" label="build" groupid="400000" scope="lab01" id="322583967" classid="MessageObj"><![CDATA[Time for Compile: 531ms  Make: 0ms]]></message>
-    <message status="normal" label="build" groupid="400000" scope="lab01" id="1012521066" classid="MessageObj"><![CDATA[Solve Time = 0ms]]></message>
-    <message status="normal" label="build" groupid="100016" scope="lab01" id="1424674607" classid="MessageObj"><![CDATA[Will execute (1): call C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat]]></message>
-    <message status="normal" label="build" groupid="100016" scope="lab01" id="377128798" classid="MessageObj"><![CDATA[Will execute (1): call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat"]]></message>
-    <message status="normal" label="build" groupid="100016" scope="lab01" id="455054626" classid="MessageObj"><![CDATA[Will execute (2): make -j -f lab01.mak]]></message>
-    <message status="normal" label="build" groupid="100016" scope="lab01" id="1497769187" classid="MessageObj"><![CDATA[Will execute (2): "C:\Projekty\JK\lab01.gf46\lab01_mak.bat"]]></message>
-    <message status="normal" label="build" groupid="100005" scope="lab01" id="1045522831" classid="MessageObj"><![CDATA[Creating EMTDC executable...]]></message>
-    <message status="normal" label="build" groupid="0" scope="lab01" id="794763083" classid="MessageObj"><![CDATA[C:\Projekty\JK\lab01.gf46>call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat" ]]></message>
-    <message status="normal" label="build" groupid="100004" scope="lab01" id="425543540" classid="MessageObj"><![CDATA[Compiling 'Main.f' into object code.]]></message>
-    <message status="normal" label="build" groupid="100013" scope="lab01" id="914719791" classid="MessageObj"><![CDATA[Linking objects and libraries into binary 'lab01.exe']]></message>
-    <message status="normal" label="build" groupid="400003" scope="lab01" id="124535206" classid="MessageObj"><![CDATA[Finished compiling with PSCAD Version Free]]></message>
+    <message status="normal" label="build" groupid="400002" scope="lab01" id="2074876879" classid="MessageObj"><![CDATA[Begin compiling with PSCAD Version Free]]></message>
+    <message status="warning" label="build" groupid="204503" scope="lab01" id="1456001652" classid="MessageObj"><![CDATA[One or more Fortran compiler checks and/or warning options are enabled in the project settings. It is recommended that these options be used during debugging only, as their use can result in a reduction of compile and/or simulation speed.]]></message>
+    <message status="normal" label="build" groupid="100006" link="2107973728" id="2107973728" classid="FileNavigator"><![CDATA[Generating 'C:\Projekty\JK\lab01.gf46\lab01.map'.]]><file scope="lab01">C:\Projekty\JK\lab01.gf46\lab01.map</file></message>
+    <message status="normal" label="build" groupid="100015" scope="lab01" id="1817502416" classid="MessageObj"><![CDATA[The total number of live nodes: 0]]></message>
+    <message status="normal" label="build" groupid="0" link="248391648" id="248391648" classid="FileNavigator"><![CDATA[Coding .mak file: 'C:\Projekty\JK\lab01.gf46\\lab01.mak']]><file scope="lab01">C:\Projekty\JK\lab01.gf46\\lab01.mak</file></message>
+    <message status="normal" label="build" groupid="400000" scope="lab01" id="455566118" classid="MessageObj"><![CDATA[Time for Compile: 141ms  Make: 0ms]]></message>
+    <message status="normal" label="build" groupid="400000" scope="lab01" id="1402480696" classid="MessageObj"><![CDATA[Solve Time = 16ms]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="1734849895" classid="MessageObj"><![CDATA[Will execute (1): call C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="1356619755" classid="MessageObj"><![CDATA[Will execute (1): call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat"]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="1029156701" classid="MessageObj"><![CDATA[Will execute (2): make -j -f lab01.mak]]></message>
+    <message status="normal" label="build" groupid="100016" scope="lab01" id="1606726774" classid="MessageObj"><![CDATA[Will execute (2): "C:\Projekty\JK\lab01.gf46\lab01_mak.bat"]]></message>
+    <message status="normal" label="build" groupid="100005" scope="lab01" id="479984965" classid="MessageObj"><![CDATA[Creating EMTDC executable...]]></message>
+    <message status="normal" label="build" groupid="0" scope="lab01" id="157160971" classid="MessageObj"><![CDATA[C:\Projekty\JK\lab01.gf46>call "C:\Program Files (x86)\GFortran\4.6\bin\gf46vars.bat" ]]></message>
+    <message status="normal" label="build" groupid="100013" scope="lab01" id="147214276" classid="MessageObj"><![CDATA[Linking objects and libraries into binary 'lab01.exe']]></message>
+    <message status="normal" label="build" groupid="400003" scope="lab01" id="1167305167" classid="MessageObj"><![CDATA[Finished compiling with PSCAD Version Free]]></message>
   </messagelist>
   <ViewContext>
     <Window defn="lab01:Main" call="0" />
   </ViewContext>
   <List classid="View">
-    <View name="Main" zoomscale="1.2" scrollx="2798" scrolly="0" />
+    <View name="Main" zoomscale="1.5" scrollx="1717" scrolly="1296" />
   </List>
-  <Output device="EMTDC" version="2010" date="2022/12/12" time="12:01:26.000000">
+  <Output device="EMTDC" version="2010" date="2022/12/16" time="22:27:41.000000">
     <Domain name="Time" unit="s" mult="0.0" skew="0.0">
       <Sample rate="1000.0" end="30000" />
     </Domain>
